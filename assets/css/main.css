@@ -7,9 +7,31 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-.icon {
-	width: 60px;
-	height: 60px;
+/* Dylan */
+
+.meet-text {
+	color: white;
+	font-weight: bold;
+}
+
+.meet-text:hover {
+	color: rgb(182, 182, 182);
+}
+
+.eric-homepage-image {
+	opacity: 0.3;
+}
+
+@media screen and (max-width: 1000px) {
+	.eric-homepage-image {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.eric-homepage-image {
+		width: 400px;
+	}
 }
 
 html, body, div, span, applet, object,
