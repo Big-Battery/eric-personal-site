@@ -20,7 +20,7 @@
   opacity: 0.25;
   background-image: url("/images/solar.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -45,6 +45,10 @@
 	margin-top: 20%;
 	position: relative;
 	width: 60%;
+}
+
+#footer {
+	z-index: 99;
 }
 
 
