@@ -14,13 +14,16 @@
 	font-weight: bold;
 }
 
-.meet-text:hover {
-	color: rgb(182, 182, 182);
-}
-
+/*
 .eric-homepage-image {
 	opacity: 0.3;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  	background-position: center;
 }
+
 
 @media screen and (max-width: 1000px) {
 	.eric-homepage-image {
@@ -33,6 +36,10 @@
 		width: 400px;
 	}
 }
+
+*/
+
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
