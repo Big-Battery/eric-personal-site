@@ -18,21 +18,11 @@
 	margin: 20px;
 }
 
-i {
-	font-size: 40px;
-}
 
 .homepage-icon {
 	margin-top: 20%;
 	position: relative;
-}
-
-@media screen and (max-width: 1680px) {
-
-	.homepage-icon {
-		font-size: 50%;
-	}
-
+	width: 60%;
 }
 
 /*
