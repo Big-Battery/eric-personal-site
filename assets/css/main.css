@@ -9,6 +9,28 @@
 
 /* Dylan */
 
+#wrapper:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background-image: url("/images/solar.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+	#wrapper:before {
+		background-image: none;
+	}
+}
+
+
 .social-media-bar {
 	margin-top: 20px;
 	justify-content: space-between;
@@ -24,32 +46,6 @@
 	position: relative;
 	width: 60%;
 }
-
-/*
-.eric-homepage-image {
-	opacity: 0.3;
-	width: 100vw;
-	height: 100vh;
-	background-repeat: no-repeat;
- 	background-attachment: fixed;
-  	background-position: center;
-}
-
-
-@media screen and (max-width: 1000px) {
-	.eric-homepage-image {
-		width: 600px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.eric-homepage-image {
-		width: 400px;
-	}
-}
-
-*/
-
 
 
 html, body, div, span, applet, object,
