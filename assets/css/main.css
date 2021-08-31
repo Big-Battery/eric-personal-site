@@ -12,13 +12,15 @@
 .robinhood-text {
 position: relative;
 left: 735px;
+top: -480px;
+font-size: 30px;
 }
 
-.meeting-text {
+.hubspot-section {
 position: relative;
 right: 525px;
-top: 120px;
-font-size: 30px;
+top: 310px;
+width: 750px;
 }
 
 #wrapper:before {
@@ -61,6 +63,8 @@ font-size: 30px;
 
 #footer {
 	z-index: 99;
+	position: relative;
+	bottom: 125px;
 }
 
 
@@ -1317,6 +1321,8 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
+		position: relative;
+		top: -400px;
 	}
 
 		#header > * {
@@ -1395,7 +1401,7 @@ input, select, textarea {
 			#header nav {
 				position: relative;
 				left: 750px;
-				bottom: 100px;
+				top: 80px;
 			}
 
 		#header nav ul {
