@@ -9,6 +9,11 @@
 
 /* Dylan */
 
+.robinhood-text {
+position: relative;
+left: 750px;
+}
+
 #wrapper:before {
   content: ' ';
   display: block;
@@ -18,10 +23,10 @@
   width: 100%;
   height: 100%;
   opacity: 0.25;
-  background-image: url("/images/solar.jpg");
+  background-image: url("/images/eric-solar.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 9=8o0vw 100vh;
 }
 
 @media screen and (max-width: 1200px) {
