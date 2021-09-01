@@ -38,11 +38,56 @@ width: 750px;
   background-size: 100;
 }
 
-@media screen and (max-width: 1200px) {
+.zoom-meeting-text {
+	display: none;
+	z-index: 99;
+}
+
+/* Smaller Desktop / Tablet */
+@media screen and (max-width: 1700px) {
 	#wrapper:before {
-		background-image: none;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 90vw 90vh;
+	}
+
+	.hubspot-section {
+		display: none;	
+		}
+
+	.zoom-meeting-text {
+			display: block;
+			z-index: 99;
+			position: relative;
+			text-align: center;
+			top: 320px;
+			bottom: 50%;
+		}
+
+
+	.robinhood-text {
+			position: relative;
+			left: 0px;
+			top: 25px;
+			}
+
+			
+	#footer {
+		z-index: 99;
+		position: relative;
+		bottom: 100px;
 	}
 }
+
+
+/* Smaller Screens / Mobiles 
+@media screen and (max-width: 600px) {
+	#wrapper:before {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50%;
+	}
+}*/
 
 
 .social-media-bar {
@@ -64,7 +109,7 @@ width: 750px;
 #footer {
 	z-index: 99;
 	position: relative;
-	bottom: 125px;
+	bottom: 100px;
 }
 
 
@@ -1413,9 +1458,28 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: 1px solid #fff;
+			/*border: 1px solid #fff;*/
 			border-radius: 4px;
 		}
+
+			/* Nav Media Query - Dylan */
+		@media screen and (max-width: 1700px) {		
+		
+			#header nav {
+				position: relative;
+				left: 0px;
+				top: 545px;
+			}
+
+				#header nav ul {
+					display: -moz-flex;
+					display: -webkit-flex;
+					display: -ms-flex;
+					display: flex;
+					flex-direction: row;
+					position: relative;
+				}
+			}
 
 			#header nav ul li {
 				padding-left: 0;
@@ -1438,6 +1502,7 @@ input, select, textarea {
 					border-bottom: 0;
 				}
 
+				/*
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.63);
 						border-radius: 4px;
@@ -1446,7 +1511,7 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 						border-radius: 4px;
-					}
+					}*/
 
 					/*
 		#header nav.use-middle:after {
@@ -1732,6 +1797,15 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		@media screen and (max-width: 1700px) {
+					
+			#footer {
+				z-index: 99;
+				position: relative;
+				bottom: 50px;
+			}
 		}
 
 	/* Time Line Styling */
