@@ -1,11 +1,11 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
 
 /* Dylan */
 
 .robinhood-text {
 position: relative;
-left: 800px;
+left: 950px;
 top: -1050px;
 text-align: center;
 }
@@ -22,9 +22,9 @@ text-align: center;
 
 .hubspot-section {
 position: static;
-margin: 350px 1800px 0px 0px;
+margin: 350px 2000px 0px 0px;
 width: 750px;
-z-index: 999;
+z-index: 0;
 }
 
 #wrapper:before {
@@ -188,6 +188,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+article {
+	z-index: 1000;
+}
+
 /* Type */
 
 	html {
@@ -220,7 +224,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -250,10 +254,12 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+		color: #165EA0;
+		font-size: 1.25rem;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #165EA0;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -267,7 +273,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #000000;
+			border-bottom: solid 1px #165EA0;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -970,7 +976,6 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			/*background-color: rgba(27, 31, 34, 0.85);*/
 			background-color: rgb(255, 255, 255);
 			color: #000;
 			border-radius: 4px;
@@ -982,7 +987,7 @@ input, select, textarea {
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				/*transform: translateY(0);*/
-				transform: translateY(-22rem);
+				transform: translateY(-45rem);
 				opacity: 1;
 				z-index: 999;
 			}
@@ -1152,7 +1157,7 @@ input, select, textarea {
 		height: 20px;
 		list-style: none;
 		text-align: justify;
-		margin: 80px auto;
+		margin: 350px auto;
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(191,128,11,1)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
 		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgb(49, 49, 49) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
 	}
@@ -1164,7 +1169,7 @@ input, select, textarea {
 		width: 30px;
 		height: 30px;
 		left: 60px;;
-		background: black;
+		background: #165EA0;
 		text-align: center;
 		line-height: 1.2;
 		position: relative;
@@ -1190,7 +1195,7 @@ input, select, textarea {
 	.timeline li:after {
 		display: inline-block;
 		content: attr(data-text);
-		font-size: 18px;
+		font-size: 22px;
 		position: absolute;
 		transform: translateX(-50%);
 		width: 200px;
@@ -1207,11 +1212,6 @@ input, select, textarea {
 		transform: translate(-50%, -100%);
 	}
 
-	/*
-	.social-media-bar {
-	border: 1px solid white;
-	}
-	*/
 	#footer .social-media-bar {
 		color: rgb(255, 255, 255);
 	}
