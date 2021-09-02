@@ -1326,10 +1326,10 @@ input, select, textarea {
 	
 	.timeline li {
 		display: inline-block;
-		width: 25px;
-		height: 25px;
+		width: 30px;
+		height: 30px;
 		left: 60px;;
-		background: white;
+		background: black;
 		text-align: center;
 		line-height: 1.2;
 		position: relative;
