@@ -58,7 +58,7 @@ width: 750px;
 		color: white;
 		display: block;
 		position: relative;
-		top: -8em;
+		top: -7em;
 	}
 
 	.robinhood-text {
@@ -93,6 +93,7 @@ width: 750px;
 	.eric-lundgren-text h3 {
 		top: -4em;
 	}
+
 }
 
 @media screen and (max-width: 414px) {
@@ -1249,7 +1250,6 @@ input, select, textarea {
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
-			
 			}
 		}
 
