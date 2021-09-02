@@ -5,15 +5,25 @@
 
 .robinhood-text {
 position: relative;
-left: 710px;
+left: 640px;
 top: -480px;
-font-size: 30px;
+text-align: center;
+}
+
+
+.robinhood-text h3 {
+	color: white;
+}
+
+.eric-lundgren-text h3 {
+	color: white;
+	display: none;
 }
 
 .hubspot-section {
 position: relative;
-right: 525px;
-top: 310px;
+right: 535px;
+top: 320px;
 width: 750px;
 }
 
@@ -25,7 +35,7 @@ width: 750px;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.15;
   background-image: url("/images/eric-solar.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -41,11 +51,20 @@ width: 750px;
 	#wrapper:before {
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 90vw 90vh;
+		background-size: cover;
 	}
 
-	.hubspot-section {
-		display: none;	
+	.eric-lundgren-text h3 {
+		color: white;
+		display: block;
+		position: relative;
+		top: -8em;
+	}
+
+	.robinhood-text {
+		position: relative;
+		left: 0px;
+		top: 25px;
 		}
 
 	.zoom-meeting-text {
@@ -53,23 +72,32 @@ width: 750px;
 			z-index: 99;
 			position: relative;
 			text-align: center;
-			top: 320px;
+			top: 400px;
 			bottom: 50%;
 			z-index: 1;
+			color: white;
 		}
 
-
-	.robinhood-text {
-			position: relative;
-			left: 0px;
-			top: 25px;
-			}
-
+	.hubspot-section {
+		display: none;	
+		}
 			
 	#footer {
 		z-index: 99;
 		position: relative;
 		bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.eric-lundgren-text h3 {
+		top: -4em;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.eric-lundgren-text h3 {
+		top: -1em;
 	}
 }
 
@@ -239,7 +267,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -253,7 +281,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #000000;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -772,6 +800,7 @@ input, select, textarea {
 			display: block;
 		}
 
+		/*
 		@media screen and (max-width: 1680px) {
 
 			#wrapper {
@@ -779,6 +808,7 @@ input, select, textarea {
 			}
 
 		}
+		*/
 
 		@media screen and (max-width: 736px) {
 
@@ -900,8 +930,8 @@ input, select, textarea {
 
 			#header nav {
 				position: relative;
-				left: 750px;
-				top: 80px;
+				left: 650px;
+				top: 50px;
 			}
 
 		#header nav ul {
@@ -923,7 +953,7 @@ input, select, textarea {
 			#header nav {
 				position: relative;
 				left: 0px;
-				top: 545px;
+				top: 620px;
 			}
 
 				#header nav ul {
@@ -1077,7 +1107,9 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			/*background-color: rgba(27, 31, 34, 0.85);*/
+			background-color: rgb(255, 255, 255);
+			color: #000;
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1087,7 +1119,7 @@ input, select, textarea {
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				/*transform: translateY(0);*/
-				transform: translateY(-24rem);
+				transform: translateY(-22rem);
 				opacity: 1;
 				z-index: 999;
 			}
@@ -1221,6 +1253,14 @@ input, select, textarea {
 			}
 		}
 
+		@media screen and (max-width: 768px) {
+			#footer {
+				z-index: 99;
+				position: relative;
+				bottom: -25px;
+			}
+		}
+
 	/* Time Line Styling */
 	@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600');
 
@@ -1234,6 +1274,13 @@ input, select, textarea {
 
 		position: relative;
 	}
+
+	#timeline {
+		overflow-x: scroll; 
+		height: 600px; 
+		width: 1200px;
+	}
+
 	
 	.timeline {
 		width: 1750px;
