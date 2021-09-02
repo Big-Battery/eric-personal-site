@@ -5,8 +5,8 @@
 
 .robinhood-text {
 position: relative;
-left: 640px;
-top: -480px;
+left: 800px;
+top: -700px;
 text-align: center;
 }
 
@@ -22,8 +22,8 @@ text-align: center;
 
 .hubspot-section {
 position: relative;
-right: 535px;
-top: 320px;
+right: 835px;
+top: 220px;
 width: 750px;
 }
 
@@ -39,20 +39,28 @@ width: 750px;
   background-image: url("/images/eric-solar.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100;
+  background-size: cover;
+  overflow-y: none;
 }
 
 .zoom-meeting-text {
 	display: none;
 }
 
+#footer {
+	position: absolute;
+	bottom: -50px;
+}
+
+
 /* Smaller Desktop / Tablet */
 @media screen and (max-width: 1700px) {
+	/*
 	#wrapper:before {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
-	}
+	}*/
 
 	.eric-lundgren-text h3 {
 		color: white;
@@ -69,10 +77,9 @@ width: 750px;
 
 	.zoom-meeting-text {
 			display: block;
-			z-index: 99;
 			position: relative;
 			text-align: center;
-			top: 400px;
+			top: 150px;
 			z-index: 1;
 		}
 
@@ -83,12 +90,12 @@ width: 750px;
 	.hubspot-section {
 		display: none;	
 		}
-			
+		/*	
 	#footer {
 		z-index: 99;
 		position: relative;
 		bottom: 100px;
-	}
+	}*/
 }
 
 @media screen and (max-width: 768px) {
@@ -96,7 +103,7 @@ width: 750px;
 		top: -4em;
 	}
 }
-
+/*
 @media screen and (max-width: 414px) {
 	.zoom-meeting-text {
 		display: block;
@@ -107,14 +114,9 @@ width: 750px;
 		z-index: 1;
 	}
 
-}
+}*/
 
 @media screen and (max-width: 375px) {
-
-	/*
-	#wrapper:before {
-		background-size: cover;
-	}*/
 
 	.eric-lundgren-text h3 {
 		top: -1em;
@@ -125,18 +127,19 @@ width: 750px;
 
  /*Smaller Screens / Mobiles */
 @media screen and (max-width: 600px) {
-	
+	/*
 #wrapper:before {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	overflow-x: hidden;
-	}
+	}*/
 }
 
 
 .social-media-bar {
-	margin-top: 20px;
+	position: relative;
+	bottom: 75px;
 	justify-content: space-between;
 }
 
@@ -151,11 +154,12 @@ width: 750px;
 	width: 60%;
 }
 
+/*
 #footer {
 	z-index: 99;
 	position: relative;
 	bottom: 100px;
-}
+}*/
 
 
 html, body, div, span, applet, object,
@@ -339,6 +343,7 @@ input, select, textarea {
 		font-size: 0.6rem;
 	}
 
+	/*
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -412,6 +417,7 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	*/
 
 /* Box */
 
@@ -831,6 +837,7 @@ input, select, textarea {
 		}
 		*/
 
+		/*
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
@@ -845,7 +852,7 @@ input, select, textarea {
 				padding: 1rem;
 			}
 
-		}
+		}*/
 
 /* Header */
 
@@ -951,8 +958,8 @@ input, select, textarea {
 
 			#header nav {
 				position: relative;
-				left: 650px;
-				top: 50px;
+				left: 875px;
+				top: 0px;
 			}
 
 		#header nav ul {
@@ -974,7 +981,7 @@ input, select, textarea {
 			#header nav {
 				position: relative;
 				left: 0px;
-				top: 620px;
+				top: 400px;
 			}
 
 				#header nav ul {
@@ -986,6 +993,7 @@ input, select, textarea {
 					position: relative;
 				}
 			}
+			/*
 		@media screen and (max-width: 414px) {		
 		
 			#header nav {
@@ -993,7 +1001,7 @@ input, select, textarea {
 				left: 0px;
 				top: 575px;
 				}
-			}
+			}*/
 			
 
 
@@ -1061,6 +1069,8 @@ input, select, textarea {
 
 		}
 
+		/*
+
 		@media screen and (max-width: 736px) {
 
 			#header > * {
@@ -1090,7 +1100,7 @@ input, select, textarea {
 				line-height: 1.875;
 			}
 
-		}
+		}*/
 
 /* Main */
 
@@ -1237,7 +1247,9 @@ input, select, textarea {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 2rem;
+		/*margin-top: 2rem;
+		position: absolute;
+		bottom: 120px;*/
 		text-align: center;
 	}
 
@@ -1267,28 +1279,29 @@ input, select, textarea {
 
 		@media screen and (max-width: 1700px) {
 					
-			#footer {
+		/*	#footer {
 				z-index: 99;
 				position: relative;
 				bottom: 50px;
-			}
+			}*/
 		}
 
 		@media screen and (max-width: 480px) {
 					
 			#footer {
 				display: flex;
-				flex-flow: row wrap;
+				flex-direction: row;
 				align-items: center;
 			}
 		}
 
 		@media screen and (max-width: 768px) {
-			#footer {
+			
+			/*#footer {
 				z-index: 99;
 				position: relative;
 				bottom: -25px;
-			}
+			}*/
 		}
 
 	/* Time Line Styling */
