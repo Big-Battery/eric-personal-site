@@ -48,7 +48,7 @@ z-index: 0;
 }
 
 article button {
-	background: #165EA0;
+	background: #165da0d0;
 	color: #fff;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 2.5rem;
@@ -74,7 +74,7 @@ article button:hover {
 		color: white;
 		display: block;
 		position: relative;
-		top: -6em;
+		top: -3.5em;
 	}
 
 	.robinhood-text {
@@ -264,10 +264,6 @@ article {
 		text-decoration: none;
 		color: inherit;
 	}
-/*
-		a:hover {
-			color: rgb(17, 17, 17);
-		}*/
 
 	strong, b {
 		color: #ffffff;
