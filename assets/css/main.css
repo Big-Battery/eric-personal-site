@@ -21,12 +21,12 @@ text-align: center;
 	display: none;
 }
 
-.hubspot-section {
-position: static;
-margin: 350px 2025px 0px 0px;
-width: 750px;
-z-index: 0;
-}
+	.hubspot-section {
+	position: static;
+	margin: 350px 2025px 0px 0px;
+	width: 750px;
+	z-index: 0;
+	}
 
 #wrapper:before {
   content: ' ';
@@ -67,8 +67,31 @@ article button:hover {
 	bottom: -50px;
 }
 
+
+@media screen and (max-width: 2750px) {
+	.hubspot-section {
+		position: static;
+		margin: 250px 1850px 0px 0px;
+		width: 750px;
+		z-index: 0;
+		width: 400px;
+		}
+
+	.robinhood-text {
+		position: relative;
+		left: 700px;
+		top: -900px;
+		text-align: center;
+		}
+
+		.robinhood-text h2 {
+			color: white;
+			font-size: 40px;
+		}
+}
+
 /* Smaller Desktop / Tablet */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 2200px) {
 
 	.eric-lundgren-text h3 {
 		color: white;
@@ -171,8 +194,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+html {
 	line-height: 1;
+	overflow-x: hidden;
 }
 
 ol, ul {
@@ -862,7 +886,7 @@ article {
 
 
 			/* Nav Media Query - Dylan */
-		@media screen and (max-width: 1700px) {		
+		@media screen and (max-width: 2300px) {		
 		
 			#header nav {
 				position: relative;
