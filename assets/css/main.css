@@ -5,7 +5,7 @@
 
 .robinhood-text {
 position: relative;
-left: 860px;
+left: 1000px;
 top: -1025px;
 text-align: center;
 }
@@ -21,12 +21,12 @@ text-align: center;
 	display: none;
 }
 
-	.hubspot-section {
-	position: static;
-	margin: 350px 2025px 0px 0px;
-	width: 750px;
-	z-index: 0;
-	}
+.hubspot-section {
+position: static;
+margin: 400px 2025px 0px 0px;
+width: 750px;
+z-index: 0;
+}
 
 #wrapper:before {
   content: ' ';
@@ -54,6 +54,7 @@ article button {
 	font-size: 2.5rem;
 	padding: 1rem;
 	border: 1px solid #fff;
+	border-radius: 7.5px;
 }
 
 article button:hover {
@@ -71,15 +72,13 @@ article button:hover {
 @media screen and (max-width: 2750px) {
 	.hubspot-section {
 		position: static;
-		margin: 250px 1850px 0px 0px;
-		width: 750px;
+		margin: 350px 1750px 0px 0px;
 		z-index: 0;
-		width: 400px;
 		}
 
 	.robinhood-text {
 		position: relative;
-		left: 725px;
+		left: 1000px;
 		top: -900px;
 		text-align: center;
 		}
@@ -90,6 +89,14 @@ article button:hover {
 		}
 }
 
+@media screen and (max-width: 2500px) {
+.hubspot-section {
+	position: static;
+	margin: 350px 1500px 0px 0px;
+	z-index: 0;
+	}
+}
+
 /* Smaller Desktop / Tablet */
 @media screen and (max-width: 2200px) {
 
@@ -97,26 +104,35 @@ article button:hover {
 		color: white;
 		display: block;
 		position: relative;
-		top: -3em;
+		top: -4.5em;
+		left: 750px;
 	}
 
 	.robinhood-text {
 		position: relative;
-		left: 0px;
+		left: 750px;	
 		top: -30px;
 		}
 
 	.zoom-meeting-text {
-			display: block;
-			position: relative;
-			text-align: center;
-			top: 60px;
+		display: block;
+		position: relative;
+		text-align: center;
+		top: 200px;
+		z-index: 998;
 		}
 
 
 	.hubspot-section {
 		display: none;	
 		}
+}
+
+@media screen and (max-width: 1800px) {
+	.zoom-meeting-text {
+		top: 100px;
+		padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -130,9 +146,8 @@ article button:hover {
 	}
 
 	.zoom-meeting-text {
-		top: 100px;		
+		top: 100px;
 		padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-
 	}
 
 	.zoom-meeting-text h2 a {
@@ -146,6 +161,7 @@ article button:hover {
 		font-size: 1.5rem;
 		padding: 1rem;
 		border: 1px solid #fff;
+
 	}
 }
 
@@ -877,6 +893,7 @@ article {
 
 		#header nav ul li {
 			border: 1px solid #fff;
+			border-radius: 7.5px;
 			background: #165da0d8;
 		 }
 
@@ -900,7 +917,7 @@ article {
 			#header nav {
 				position: relative;
 				left: 0px;
-				top: 410px;
+				top: 350px;
 			}
 
 				#header nav ul {
@@ -1203,12 +1220,12 @@ article {
 	#timeline {
 		overflow-x: scroll; 
 		height: 1000px; 
-		z-index: 999;
+		z-index: 9999;
 	}
 
 	
 	.timeline {
-		width: 1750px;
+		width: 1800px;
 		height: 20px;
 		list-style: none;
 		text-align: justify;
@@ -1223,7 +1240,7 @@ article {
 		display: inline-block;
 		width: 30px;
 		height: 30px;
-		left: 60px;;
+		left: 10px;;
 		background: #165EA0;
 		text-align: center;
 		line-height: 1.2;
@@ -1265,6 +1282,25 @@ article {
 		top: 0;
 		margin-top: -10px;
 		transform: translate(-50%, -100%);
+	}
+	
+	.timeline-images {
+		display: flex;
+		flex-direction: row;
+		margin-left: -20px;
+	}
+
+	.timeline-images img {
+		height: auto;
+		width: 325px;
+		margin: 40px 7.55px 0px 20px;
+		border-radius: 7.5px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		transition: 0.2s all;
+	}
+
+	.timeline-images img:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
 
 	#footer .social-media-bar {
