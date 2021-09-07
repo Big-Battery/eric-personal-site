@@ -10,16 +10,34 @@ top: -1070px;
 text-align: center;
 }
 
+/* robinhood text media queries */
 
 .robinhood-text h2 {
 	color: white;
 	font-size: 50px;
 }
 
-.eric-lundgren-text h3 {
-	color: white;
-	display: none;
+@media screen and (max-width: 2500px) {
+	.robinhood-text h2 {
+		color: white;
+		font-size: 32px;
+	}	
 }
+
+@media screen and (max-width: 2400px) {
+	.robinhood-text {
+		position: relative;
+		left: 950px;
+		}
+}
+
+@media screen and (max-width: 2300px) {
+	.robinhood-text {
+		position: relative;
+		left: 900px;
+		}
+}
+
 
 .hubspot-section {
 position: static;
@@ -75,18 +93,6 @@ article button:hover {
 		margin: 350px 1750px 0px 0px;
 		z-index: 0;
 		}
-
-	.robinhood-text {
-		position: relative;
-		left: 1000px;
-		top: -900px;
-		text-align: center;
-		}
-
-		.robinhood-text h2 {
-			color: white;
-			font-size: 40px;
-		}
 }
 
 @media screen and (max-width: 2500px) {
@@ -98,27 +104,14 @@ article button:hover {
 }
 
 /* Smaller Desktop / Tablet */
-@media screen and (max-width: 2200px) {
+@media screen and (max-width: 2300px) {
 
-	.eric-lundgren-text h3 {
-		color: white;
-		display: block;
-		position: relative;
-		top: -4.5em;
-		left: 750px;
-	}
-
-	.robinhood-text {
-		position: relative;
-		left: 750px;	
-		top: -30px;
-		}
 
 	.zoom-meeting-text {
 		display: block;
 		position: relative;
 		text-align: center;
-		top: 200px;
+		top: 30px;
 		z-index: 998;
 		}
 
@@ -128,22 +121,15 @@ article button:hover {
 		}
 }
 
-@media screen and (max-width: 1800px) {
+/* Schedule a Meeting Button (Main) Query - let's get this done! */
+@media screen and (max-width: 1680px) {
 	.zoom-meeting-text {
-		top: 100px;
+		top: 10px;
 		padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-	}
-}
+		}
+} 
 
 @media screen and (max-width: 768px) {
-	.eric-lundgren-text h3 {
-		top: -4em;
-	}
-
-	.robinhood-text h2 {
-		color: white;
-		font-size: 30px;
-	}
 
 	.zoom-meeting-text {
 		top: 100px;
@@ -169,6 +155,10 @@ article button:hover {
 
 	.eric-lundgren-text h3 {
 		top: -1em;
+	}
+
+	.zoom-meeting-text {
+		top: 25px;
 	}
 
 }
@@ -1059,9 +1049,21 @@ article {
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				/*transform: translateY(0);*/
-				transform: translateY(-45rem);
+				transform: translateY(-10rem);
 				opacity: 1;
 				z-index: 999;
+			}
+
+			@media screen and (min-width: 2200px) {
+				#main article.active {
+					-moz-transform: translateY(0);
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					/*transform: translateY(0);*/
+					transform: translateY(-45rem);
+					opacity: 1;
+					z-index: 999;
+				}
 			}
 
 			@media screen and (max-width: 1700px) {		
@@ -1069,7 +1071,7 @@ article {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
-				transform: translateY(0);
+				transform: translateY(-10rem);
 			}
 		}
 
